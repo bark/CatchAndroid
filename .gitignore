@@ -12,3 +12,6 @@ bin/*
 CatchLib/*
 libs/*
 *.so
+
+# OS X noise
+.DS_Store
