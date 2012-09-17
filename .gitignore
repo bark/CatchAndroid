@@ -1,8 +1,5 @@
-*.class
+# Eclipse stuff
+.settings
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-CatchLib/
+bin/*
+libs/*
