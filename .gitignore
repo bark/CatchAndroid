@@ -1,5 +1,14 @@
 # Eclipse stuff
 .settings
 
+# Java related
 bin/*
+*.class
+*.jar
+*.war
+*.war
+
+# C/C++ related
+CatchLib/*
 libs/*
+*.so
