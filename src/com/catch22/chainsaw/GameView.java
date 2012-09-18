@@ -1,28 +1,13 @@
 package com.catch22.chainsaw;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.util.Log;
-import android.view.Menu;
+import android.content.Context;
+import android.opengl.GLSurfaceView;
 
-public class GameView extends Activity {
+public class GameView extends GLSurfaceView {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_view);
-        GameView.createGLRenderer();
-    }
+	public GameView(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_game_view, menu);
-        return true;
-    }
-    
-    public static native void createGLRenderer();
-    
-    static {
-    	System.loadLibrary("catchLib");
-    }
 }
