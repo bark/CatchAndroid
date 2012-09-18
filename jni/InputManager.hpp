@@ -8,8 +8,9 @@
 
 #ifndef CatchiOS_InputManager_h
 #define CatchiOS_InputManager_h
-typedef InputType {
-    TOUCH;
+
+typedef enum InputType {
+    TOUCH,
     MENU_BUTTON
 };
 

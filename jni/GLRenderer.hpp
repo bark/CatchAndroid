@@ -9,18 +9,19 @@
 #if TARGET_OS_IPHONE
 #include <OpenGLES/ES1/glext.h>
 #else
-//#include <GLES/glext.h>
+#include <GLES/gl.h>
+#include <GLES/glext.h>
 #endif
 
 #ifndef CatchiOS_FileManager_h
 #define CatchiOS_FileManager_h
 struct Texture{
-   /* GLint           internalFormat;
+	GLint           internalFormat;
     GLsizei         width;
     GLsizei         height;
     GLenum          format;
     GLenum          type;
-    const GLvoid*   data;*/
+    const GLvoid*   data;
 };
 
 class GLRenderer {
